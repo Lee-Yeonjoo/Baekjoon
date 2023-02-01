@@ -15,13 +15,12 @@ public class Main {
             if(x == 1){
                 score.push(sc.nextInt());
                 cnt.push(sc.nextInt());
-                if(!cnt.isEmpty()) {
-                    cnt.push(cnt.pop()-1);
-                    if (cnt.peek() == 0) {
-                        sum += score.pop();
-                        cnt.pop();
-                    }
+                cnt.push(cnt.pop()-1);
+                if (cnt.peek() == 0) {
+                    sum += score.pop();
+                    cnt.pop();
                 }
+                
             }
             else{
                 if(!cnt.isEmpty()) {
